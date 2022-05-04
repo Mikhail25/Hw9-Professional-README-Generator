@@ -17,7 +17,7 @@ function writeToFile(fileName, data) {
     
     const contents = generateMarkdown(data);
 
-    fs.appendFile(fileName+'.md', contents, (err) => {
+    fs.appendFile('./export/'+fileName+'-README.md', contents, (err) => {
         err ? console.error(err) : console.log('Commit logged!');
     });
 }
@@ -73,7 +73,7 @@ function init() {
             
         ])
         .then((data) => {
-            writeToFile(data.projName, data);
+            writeToFile(data.title, data);
         });
 
 }

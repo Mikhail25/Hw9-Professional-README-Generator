@@ -23,9 +23,10 @@ function renderLicenseBadge(license) {
       return '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
       break;
     Default :
-      return "";
+      return '';
       break;
   }
+  return '';
 }
 
 // TODO: Create a function that returns the license link
@@ -39,36 +40,37 @@ function renderLicenseLink(license) {
     case 'Apache' : 
       return `## License
       
-      This project is license under the [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)`
+  This project is license under the [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)`
       break;
 
     case 'BSD 3-Clause' :
       return `## License
       
-      This project is license under the [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)`
+  This project is license under the [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)`
       break;
 
     case 'BSD 2-Clause' :
       return `## License
       
-      This project is license under the [BSD 2-Clause License](https://opensource.org/licenses/BSD-2-Clause)`
+  This project is license under the [BSD 2-Clause License](https://opensource.org/licenses/BSD-2-Clause)`
       break;
 
     case 'MIT' :
       return `## License
       
-      This project is license under the [The MIT License](https://opensource.org/licenses/MIT)`
+  This project is license under the [The MIT License](https://opensource.org/licenses/MIT)`
       break;
 
     case 'Mozilla Public License 2.0' :
       return `## License
       
-      This project is license under the [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)`
+  This project is license under the [Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)`
       break;
     Default :
-      return "";
+      return '';
       break;
   }
+  return '';
 }
 
 // TODO: Create a function that returns the license section of README
@@ -90,41 +92,41 @@ const licenseLink = renderLicenseLink(data.license);
 const licenseSection = renderLicenseSection(data.license);
 
   return `# ${data.title}
-  ${badge}
+${badge}
 
-  ## Description
+## Description
 
-  ${data.description}
+${data.description}
 
-  ## Table of Contents
+## Table of Contents
 
-  *[Installation](#installation)
-  *[Usage](#usage)
-  ${licenseSection}
-  *[Contributing](#contributing)
-  *[Tests](#tests)
+* [Installation](#installation)
+* [Usage](#usage)
+${licenseSection}
+* [Contributing](#contributing)
+* [Tests](#tests)
 
 
-  ## Installation
+## Installation
 
-  
-  > ${data.commDepend}
 
-  ## Usage 
+> ${data.commDepend}
 
-  ${data.repoKnow}
+## Usage 
 
-  ${licenseLink}
+${data.repoKnow}
 
-  ## Contributing
+${licenseLink}
 
-  ${data.repoContribute}
+## Contributing
 
-  ## Tests  
+${data.repoContribute}
 
-  To run tests, run the following command: 
+## Tests  
 
-  > ${data.commTests}
+To run tests, run the following command: 
+
+> ${data.commTests}
 
 `;
 }
