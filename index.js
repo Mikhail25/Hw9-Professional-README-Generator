@@ -10,7 +10,9 @@ const questions = ["What is your projects name?",
                     "What command should be run to install dependencies?",
                     "What command should be run to run tests?",
                     "What does the user need to know about using the repo?",
-                    "What does the user need to know about contributing to the repo?"];
+                    "What does the user need to know about contributing to the repo?",
+                    "What is your email address?",
+                    "What is your Github Username?"];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -69,6 +71,16 @@ function init() {
                 type: 'input',
                 name: 'repoContribute',
                 message: questions[6],
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: questions[7],
+            },
+            {
+                type: 'input',
+                name: 'github',
+                message: questions[8],
             },
             
         ])

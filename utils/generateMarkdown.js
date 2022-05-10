@@ -106,6 +106,7 @@ ${licenseSection}
 * [Contributing](#contributing)
 * [Tests](#tests)
 
+---
 
 ## Installation
 
@@ -127,6 +128,10 @@ ${data.repoContribute}
 To run tests, run the following command: 
 
 > ${data.commTests}
+
+For more information, you can contact me though my [email](mailto:${data.email}) for mor information.
+
+You can also check out my [Github](https://github.com/${data.github}) for my other repos!
 
 `;
 }
