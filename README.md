@@ -25,5 +25,5 @@ This program includes:
 
 ![Screenshot of the licenseless version 2/2](./images/Screen4.png)
 
-[Link to the video for instructions](https://drive.google.com/file/d/1qV_QNK72k4Oj8nF7ESAVZWxcS-i36lUu/view?usp=sharing)
+[Link to the video for instructions](https://drive.google.com/file/d/1QammshQ2XqRps7qhLByT1UjAKpxiMlLE/view)
 
